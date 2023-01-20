@@ -1,4 +1,4 @@
-package dsaSheetArray;
+package Array;
 
 class MinMax {
 	int min;

@@ -1,4 +1,4 @@
-package dsaSheetArray;
+package Array;
 
 public class NextPermutation {
 	

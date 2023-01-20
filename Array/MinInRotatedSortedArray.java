@@ -1,4 +1,4 @@
-package dsaSheetArray;
+package Array;
 
 public class MinInRotatedSortedArray {
 	// Brute Force approach
