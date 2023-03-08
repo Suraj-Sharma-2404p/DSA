@@ -2,7 +2,6 @@ package slidingWindowQuestions;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class Firstnegativenumberineverywindowofsizek {
@@ -31,7 +30,6 @@ public class Firstnegativenumberineverywindowofsizek {
 
 		Queue<Integer> queue = new LinkedList<>();
 		//PriorityQueue<Integer> queue = new PriorityQueue<>();
-
 		int windowStart = 0;
 		int windowEnd = 0;
 		for (windowEnd = 0; windowEnd < n; windowEnd++) {
