@@ -20,7 +20,7 @@ public class MergeSortShraddha {
 		int idx2 = mid + 1;
 		int x = 0;
 
-		// when both array length is equal
+		// when both array length is equal.
 		while (idx1 <= mid && idx2 <= end) {
 			if (arr[idx1] < arr[idx2]) {
 				merged[x++] = arr[idx1++];
@@ -29,7 +29,7 @@ public class MergeSortShraddha {
 			}
 		}
 
-		// when any one array exhaust before another
+		// when any one array exhaust before another.
 
 		while (idx1 <= mid) {
 			merged[x++] = arr[idx1++];

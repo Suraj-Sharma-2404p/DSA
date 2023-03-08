@@ -7,13 +7,14 @@ public class HighestFrequencyCharacter {
 	static void highestFrequencyCharacter(String s) {
 		HashMap<Character, Integer> hmap = new HashMap<>();
 		for (int i = 0; i < s.length(); i++) {
-			if (hmap.containsKey(s.charAt(i))) {
-				int old = hmap.get(s.charAt(i));
-				int newfreq = old + 1;
-				hmap.put(s.charAt(i), newfreq);
-			} else {
-				hmap.put(s.charAt(i), 1);
-			}
+//			if (hmap.containsKey(s.charAt(i))) {
+//				int old = hmap.get(s.charAt(i));
+//				int newfreq = old + 1;
+//				hmap.put(s.charAt(i), newfreq);
+//			} else {
+//				hmap.put(s.charAt(i), 1);
+//			}
+			hmap.put(s.charAt(i),hmap.getOrDefault(s.charAt(i),0)+1);
 
 		}
 		char max = s.charAt(0);
@@ -26,6 +27,7 @@ public class HighestFrequencyCharacter {
 	}
 
 	public static void main(String[] args) {
-		highestFrequencyCharacter("ABRACADABRA");
+
+		highestFrequencyCharacter("suuuuu");
 	}
 }
